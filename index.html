@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Singh - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .section {
+            min-height: 100vh;
+            scroll-margin-top: 60px;
+        }
+        .skill-tag {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: #2563eb;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 text-white flex justify-center space-x-8 p-4 z-50">
+        <a href="#home" class="hover:text-blue-400">Home</a>
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#education" class="hover:text-blue-400">Education</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#skills" class="hover:text-blue-400">Skills</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section flex items-center justify-center bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+        <div class="text-center">
+            <img src="profile.jpg" alt="Vaishnavi Singh" class="rounded-full w-64 h-64 mx-auto mb-6 object-cover border-4 border-blue-500">
+            <h1 class="text-5xl font-bold mb-4">Vaishnavi Singh</h1>
+            <p class="text-2xl text-blue-300">Computer Science Engineer | AI & ML Enthusiast</p>
+            <div class="flex justify-center space-x-4 mt-6">
+                <a href="tel:9422296544" class="hover:text-blue-400">📱 9422296544</a>
+                <a href="mailto:vaishnavisinghbarc@gmail.com" class="hover:text-blue-400">✉️ Email</a>
+                <a href="https://www.linkedin.com/in/vaishnavi-singh-bb2503253/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-white p-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+        <div class="max-w-4xl mx-auto">
+            <p class="text-gray-700 leading-relaxed text-center">
+                A third-year B.Tech student majoring in Computer Science & Engineering (Artificial Intelligence & Machine Learning) at VIT, Pune. 
+                I'm passionate about coding, especially Java, and always eager to learn new technologies. 
+                My interests span app development, frontend design, project management, and exploring the realms of AI and Machine Learning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-gray-100 p-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Education</h2>
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
+            <h3 class="text-2xl font-semibold">Vishwakarma Institute of Technology - Pune</h3>
+            <p class="text-gray-700">Bachelor of Technology - Computer Science Engineering (AI & ML)</p>
+            <p class="text-gray-600">2022-2026 | Current CGPA: 8.49</p>
+
+            <h3 class="text-2xl font-semibold mt-6">Atomic Energy Education Society - Tarapur</h3>
+            <p class="text-gray-700">Class 12 - 91.2%</p>
+            <p class="text-gray-700">Class 10 - 94.6%</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray-50 p-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Projects</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="project-card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-800">Wireless Drone Charging Pod</h3>
+                <p class="text-gray-700 mb-4">Next Generation Drone Charging Solution optimized for drone fleets.</p>
+                <div class="skill-tag">Hardware</div>
+                <div class="skill-tag">Software Design</div>
+            </div>
+            <div class="project-card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-800">Ghumo Bharat Application</h3>
+                <p class="text-gray-700 mb-4">Tourism Application with 3D models and ticket booking service.</p>
+                <div class="skill-tag">Java</div>
+                <div class="skill-tag">Tourism Tech</div>
+            </div>
+            <div class="project-card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-800">Heart Stroke Prediction</h3>
+                <p class="text-gray-700 mb-4">Machine Learning classification model with 99.26% accuracy using Naive Bayes.</p>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Machine Learning</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-white p-16">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Skills</h2>
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="skill-tag">Java</div>
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">Flutter</div>
+            <div class="skill-tag">React.js</div>
+            <div class="skill-tag">MySQL</div>
+            <div class="skill-tag">Figma</div>
+            <div class="skill-tag">Machine Learning</div>
+            <div class="skill-tag">Data Structures</div>
+            <div class="skill-tag">App Development</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-6">
+        <p>© 2024 Vaishnavi Singh. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
